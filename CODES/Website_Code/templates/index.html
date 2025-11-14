@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compression Methodology Comparison</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Compression Methodology Comparison</h1>
+    </header>
+
+    <main>
+        <div class="compression-card">
+            <h2>Existing Methodology (LZW)</h2>
+            <form class="compression-form" data-algorithm="lzw">
+                <input type="file" name="file" accept=".csv" required>
+                <input type="hidden" name="algorithm" value="lzw">
+                <button type="submit">Compress & Compare</button>
+                <div class="results">
+                    </div>
+                <div class="download-container"></div>
+                <div class="loader" style="display: none;">Compressing...</div>
+            </form>
+        </div>
+
+        <div class="compression-card">
+            <h2>Proposed Methodology (Z Standard)</h2>
+            <form class="compression-form" data-algorithm="z-standard">
+                <input type="file" name="file" accept=".csv" required>
+                <input type="hidden" name="algorithm" value="z-standard">
+                <button type="submit">Compress & Compare</button>
+                <div class="results">
+                    </div>
+                <div class="download-container"></div>
+                <div class="loader" style="display: none;">Compressing...</div>
+            </form>
+        </div>
+    </main>
+
+    <section id="results-container">
+        <h2>Comparison Results</h2>
+        <div id="results-table">
+            </div>
+        <button id="download-csv">Download CSV</button>
+    </section>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
