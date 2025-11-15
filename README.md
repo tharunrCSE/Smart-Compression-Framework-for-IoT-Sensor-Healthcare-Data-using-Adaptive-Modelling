@@ -49,7 +49,6 @@ A **Flask-based Web Application** is also provided to perform compression intera
 
 ## **Project Directory Structure**
 
-*(Accurate as per your uploaded and shared file layout)*
 
 ```
 Smart-Compression-Framework/
