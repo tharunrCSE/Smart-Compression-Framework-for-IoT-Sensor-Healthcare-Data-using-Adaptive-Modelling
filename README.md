@@ -103,7 +103,7 @@ Smart-Compression-Framework/
 
 ---
 
-## 🏗 **Methodology Overview**
+## **Methodology Overview**
 
 ### **1️ LZW (Existing Method)**
 
